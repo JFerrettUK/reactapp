@@ -42,7 +42,9 @@ export default function TravelPlan() {
   }
 
   function handleDeleteItem(itemId) {
-    if (itemId === packed) {
+    const theItem = items.find((item) => item.id === itemId);
+
+    if (theItem.packed === true) {
       setPacked((prevPacked) => prevPacked - 1);
     }
 
