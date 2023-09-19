@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import BackgroundSet from "./BackgroundSet.jsx";
+import Person from "./Person.jsx";
 
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BackgroundSet />
+    <Person />
   </React.StrictMode>
 );
